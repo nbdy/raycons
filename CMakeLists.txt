@@ -3,5 +3,5 @@ project(raycons)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(raycons lib.cpp)
+add_executable(raycons main.cpp Icons.h)
 target_link_libraries(raycons raylib)
