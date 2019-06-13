@@ -31,9 +31,9 @@ int main(int argc, char** argv) {
         Icons::wifiEnabled(260, 180, 32, 32);
         Icons::wifiDisabled(340, 180, 32, 32);
         // play
-        Icons::play(20, 260, 8, 8);
-        Icons::play(80, 260, 16, 16);
-        Icons::play(140, 260, 32, 32);
+        Icons::pause(20, 260, 8, 8);
+        Icons::pause(80, 260, 16, 16);
+        Icons::pause(140, 260, 32, 32);
         DrawFPS(8, 576);
         EndDrawing();
     }

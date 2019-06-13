@@ -67,14 +67,14 @@ public:
     }
 
     static void play(int x, int y, int sizeX, int sizeY){
+
+    }
+
+    static void pause(int x, int y, int sizeX, int sizeY){
         int xc = x + sizeX / 2;
         int yc = y + sizeY / 2;
         DrawLineEx(Vector2{x, y}, Vector2{x, y + sizeY}, sizeX / 4, GREEN);
         DrawLineEx(Vector2{x + sizeX, y}, Vector2{x + sizeX, y + sizeY}, sizeX / 4, GREEN);
-    }
-
-    static void pause(){
-
     }
 
     static void album(){
