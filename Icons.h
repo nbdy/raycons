@@ -49,11 +49,32 @@ public:
         // DrawLineEx(Vector2{x + sizeX, y}, Vector2{x, y + sizeY}, 2, GREEN);
     }
 
+    static void wifiEnabled(int x, int y, int sizeX, int sizeY){ // todo strength?
+        int xc = x + sizeX / 2;
+        int yc = y + sizeY / 2;
+        DrawCircleLines(xc, yc, sizeX, GREEN);
+        DrawCircleLines(xc, yc, sizeX / 1.4, GREEN);
+        DrawCircleLines(xc, yc, sizeX / 1.8, GREEN);
+        DrawCircleLines(xc, yc, sizeX / 2.6, GREEN);
+        DrawCircleLines(xc, yc, sizeX / 3.2, GREEN);
+        //Draw
+    }
+
+    static void wifiDisabled(int x, int y, int sizeX, int sizeY){
+        int xc = x + sizeX / 2;
+        int yc = y + sizeY / 2;
+        wifiEnabled(x, y, sizeX, sizeY);
+    }
+
     static void play(){
 
     }
 
     static void pause(){
+
+    }
+
+    static void album(){
 
     }
 };
