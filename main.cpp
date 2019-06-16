@@ -42,6 +42,10 @@ int main(int argc, char** argv) {
         Icons::album(20, 420, 8, 8);
         Icons::album(80, 420, 16, 16);
         Icons::album(140, 420, 32, 32);
+        // home
+        Icons::home(20, 500, 8, 8);
+        Icons::home(80, 500, 16, 16);
+        Icons::home(140, 500, 32, 32);
 
         DrawFPS(8, 576);
         EndDrawing();

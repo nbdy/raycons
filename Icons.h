@@ -58,9 +58,9 @@ public:
         DrawCircleLines(xc, yc, sizeX / 1.6, GREEN);
         DrawCircleLines(xc, yc, sizeX / 2, GREEN);
         DrawRectangle(x - sizeX + sizeX / 2, yc, sizeX * 2 + sizeX / 2, sizeY / 2 + sizeX / 2, BLACK);
-        DrawTriangle((Vector2){x - sizeX / 1.4, y - sizeY / 4},
-                     (Vector2){x - sizeX / 1.4, yc},
-                     (Vector2){xc, yc}, GREEN);
+        DrawTriangle((Vector2){x + sizeX / 1.4, y - sizeY / 4},
+                     (Vector2){x + sizeX, yc},
+                     (Vector2){xc, yc}, VIOLET);
         DrawTriangle((Vector2){x - sizeX / 1.4, y - sizeY / 4},
                      (Vector2){x - sizeX / 1.4, yc},
                      (Vector2){xc, yc}, BLACK);
@@ -103,5 +103,15 @@ public:
         DrawCircle(xc, yc, sizeX, GREEN);
         DrawCircle(xc, yc, sizeX / 2, BLACK);
         DrawCircle(xc, yc, sizeX / 5, GREEN);
+    }
+
+    static void home(int x, int y, int sizeX, int sizeY){
+        int xc = x + sizeX / 2;
+        int yc = y + sizeY / 2;
+        DrawRectangle(x, yc, sizeX, sizeY / 2, GREEN);
+        DrawTriangle(Vector2{xc, y}, Vector2{x, yc}, Vector2{x + sizeX, yc}, GREEN);
+        DrawRectangle(xc - sizeX / 4, yc + sizeY / 2 - sizeY / 4, sizeX / 4, sizeY / 4, BLACK);
+        DrawRectangle(x, yc, sizeX / 8, sizeY / 2, BLACK);
+        DrawRectangle(x + sizeX - sizeX / 8, yc, sizeX / 8, sizeY / 2, BLACK);
     }
 };
