@@ -46,6 +46,10 @@ int main(int argc, char** argv) {
         Icons::home(20, 500, 8, 8);
         Icons::home(80, 500, 16, 16);
         Icons::home(140, 500, 32, 32);
+        // navigation
+        Icons::navigation(220, 260, 8, 8);
+        Icons::navigation(300, 260, 16, 16);
+        Icons::navigation(380, 260, 32, 32);
 
         DrawFPS(8, 576);
         EndDrawing();

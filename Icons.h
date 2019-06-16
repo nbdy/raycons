@@ -114,4 +114,15 @@ public:
         DrawRectangle(x, yc, sizeX / 8, sizeY / 2, BLACK);
         DrawRectangle(x + sizeX - sizeX / 8, yc, sizeX / 8, sizeY / 2, BLACK);
     }
+
+    static void navigation(int x, int y, int sizeX, int sizeY){
+        int xc = x + sizeX / 2;
+        int yc = y + sizeY / 2;
+        DrawTriangle(Vector2{xc, y},
+                     Vector2{xc - sizeX / 2, y + sizeY},
+                     Vector2{xc + sizeX / 2, y + sizeY}, GREEN);
+        DrawTriangle(Vector2{xc, y + sizeY / 1.4},
+                     Vector2{xc - sizeX / 2, y + sizeY},
+                     Vector2{xc + sizeX / 2, y + sizeY}, BLACK);
+    }
 };
