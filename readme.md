@@ -1,4 +1,5 @@
 ## raycons
+![Build Status](http://build.eberlein.io:8080/buildStatus/icon?job=raycons)
 ### implemented: 
 ```
 - bluetooth (enabled/disabled)
