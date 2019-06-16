@@ -38,6 +38,10 @@ int main(int argc, char** argv) {
         Icons::play(20, 340, 8, 8);
         Icons::play(80, 340, 16, 16);
         Icons::play(140, 340, 32, 32);
+        // album
+        Icons::album(20, 420, 8, 8);
+        Icons::album(80, 420, 16, 16);
+        Icons::album(140, 420, 32, 32);
 
         DrawFPS(8, 576);
         EndDrawing();

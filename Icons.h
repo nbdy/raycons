@@ -49,15 +49,31 @@ public:
         // DrawLineEx(Vector2{x + sizeX, y}, Vector2{x, y + sizeY}, 2, GREEN);
     }
 
-    static void wifiEnabled(int x, int y, int sizeX, int sizeY){ // todo strength?
+    static void wifiEnabled(int x, int y, int sizeX, int sizeY){ // todo strength? for loop drawcirclelines
         int xc = x + sizeX / 2;
         int yc = y + sizeY / 2;
+        DrawCircleLines(xc, yc, sizeX, GREEN);
+        DrawCircleLines(xc, yc, sizeX / 1.2, GREEN);
+        DrawCircleLines(xc, yc, sizeX / 1.4, GREEN);
+        DrawCircleLines(xc, yc, sizeX / 1.6, GREEN);
+        DrawCircleLines(xc, yc, sizeX / 2, GREEN);
+        DrawRectangle(x - sizeX + sizeX / 2, yc, sizeX * 2 + sizeX / 2, sizeY / 2 + sizeX / 2, BLACK);
+        DrawTriangle((Vector2){x - sizeX / 1.4, y - sizeY / 4},
+                     (Vector2){x - sizeX / 1.4, yc},
+                     (Vector2){xc, yc}, GREEN);
+        DrawTriangle((Vector2){x - sizeX / 1.4, y - sizeY / 4},
+                     (Vector2){x - sizeX / 1.4, yc},
+                     (Vector2){xc, yc}, BLACK);
+        //DrawTriangle(Vector2{xc, yc}, Vector2{xc + sizeX, yc}, Vector2{x + sizeX, y - sizeX / 2}, GREEN);
+        DrawCircle(xc, yc, sizeX / 4, GREEN);
+
+        /*
         DrawCircleLines(xc, yc, sizeX, GREEN);
         DrawCircleLines(xc, yc, sizeX / 1.4, GREEN);
         DrawCircleLines(xc, yc, sizeX / 1.8, GREEN);
         DrawCircleLines(xc, yc, sizeX / 2.6, GREEN);
         DrawCircleLines(xc, yc, sizeX / 3.2, GREEN);
-        //Draw
+        */
     }
 
     static void wifiDisabled(int x, int y, int sizeX, int sizeY){
@@ -81,7 +97,11 @@ public:
         DrawLineEx(Vector2{x + sizeX, y}, Vector2{x + sizeX, y + sizeY}, sizeX / 4, GREEN);
     }
 
-    static void album(){
-
+    static void album(int x, int y, int sizeX, int sizeY){
+        int xc = x + sizeX / 2;
+        int yc = y + sizeY / 2;
+        DrawCircle(xc, yc, sizeX, GREEN);
+        DrawCircle(xc, yc, sizeX / 2, BLACK);
+        DrawCircle(xc, yc, sizeX / 5, GREEN);
     }
 };
