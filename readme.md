@@ -1,5 +1,5 @@
 ## raycons
-![Build Status](http://build.eberlein.io:8080/buildStatus/icon?job=raycons)
+[![Build Status](http://build.eberlein.io:8080/job/cpp_raycons/badge/icon)](http://build.eberlein.io:8080/job/cpp_raycons/)
 ### implemented: 
 ```
 - bluetooth (enabled/disabled)
