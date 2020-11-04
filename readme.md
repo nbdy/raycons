@@ -11,6 +11,6 @@
 - navigation
 ```
 ### why?
-[this](https://github.com/smthnspcl/raycons/blob/master/scrnsht/issue.jpg) happened only on the raspberry when loading png icons from material.io<br>
+[this](https://github.com/nbdy/raycons/blob/master/scrnsht/issue.jpg) happened only on the raspberry when loading png icons from material.io<br>
 ### screenshot
-![overview](https://github.com/smthnspcl/raycons/blob/master/scrnsht/overview.png "overview")
+![overview](https://github.com/nbdy/raycons/blob/master/scrnsht/overview.png "overview")
